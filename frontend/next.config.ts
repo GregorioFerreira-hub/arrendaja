@@ -9,6 +9,7 @@ const withPWA = withPWAInit({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  turbopack: {}, // <-- Adicionado para compatibilidade com o Next.js 16+ na Vercel
   images: {
     remotePatterns: [
       {
